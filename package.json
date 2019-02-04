@@ -1,0 +1,36 @@
+{
+  "name": "catmull-clark",
+  "homepage": "https://michaelspitzer.at/catmull-clark",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gl-catmull-clark": "^1.0.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-file-picker": "^0.0.5",
+    "react-fps-stats": "^0.1.1",
+    "react-responsive-modal": "^3.5.1",
+    "react-scripts": "2.1.3",
+    "react-three-renderer": "^3.2.4",
+    "react-three-renderer-objects": "^0.0.6",
+    "simple-flexbox": "^1.2.0",
+    "three": "^0.100.0",
+    "three-obj-loader": "^1.1.3",
+    "three-trackballcontrols": "^0.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
