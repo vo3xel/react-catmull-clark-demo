@@ -42,7 +42,7 @@ class App extends Component {
         return "v " + vertexline[0].toLocaleString('fullwide', {useGrouping:false, minimumFractionDigits:6}).replace(",",".") + " " + vertexline[1].toLocaleString('fullwide', {useGrouping:false, minimumFractionDigits:6}).replace(",",".") + " " + vertexline[2].toLocaleString('fullwide', {useGrouping:false, minimumFractionDigits:6}).replace(",",".")
     })
     var facesExport = mesh.cells.map((faceline) => {
-      return "f " + (faceline[3]+1) + " " + (faceline[2]+1) + " " + (faceline[1]+1) + " " + (faceline[0]+1)
+      return "f " + (faceline[0]+1) + " " + (faceline[1]+1) + " " + (faceline[2]+1) + " " + (faceline[3]+1)
   })
     var file = new Blob([vertexExport.join("\n") + "\n" + facesExport.join("\n")], {type: 'text/plain'});
     return  URL.createObjectURL(file);
@@ -84,7 +84,7 @@ class App extends Component {
             vn = vn.replace(/\/\//g, " ");
             var faces = vn.split(" ");
             faces.shift();
-            return [ Number(faces[6])-1, Number(faces[4])-1, Number(faces[2])-1, Number(faces[0])-1 ];
+            return [ Number(faces[0])-1, Number(faces[2])-1, Number(faces[4])-1, Number(faces[6])-1 ];
           });
       }
       resolve(obj);
