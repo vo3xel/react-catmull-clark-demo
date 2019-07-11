@@ -1,9 +1,10 @@
 {
   "name": "catmull-clark",
-  "homepage": "https://michaelspitzer.at/catmull-clark",
+  "homepage": "https://vo3xel.github.io/catmull-clark",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "gl-catmull-clark": "^1.0.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
@@ -22,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
